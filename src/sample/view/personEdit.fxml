@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.PersonEdit">
+   <children>
+      <Label layoutX="31.0" layoutY="68.0" text="id:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="107.0" text="Фамилия:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="148.0" text="Имя:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="181.0" text="Улица:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="217.0" text="Город:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="261.0" text="Почтовый индекс:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="300.0" text="Датa рождения:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="250.0" layoutY="66.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="txtLastName" layoutX="250.0" layoutY="105.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="txtFirstName" layoutX="250.0" layoutY="146.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="txtStreet" layoutX="250.0" layoutY="178.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="txtCity" layoutX="250.0" layoutY="214.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="txtPostalIndex" layoutX="250.0" layoutY="258.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="txtBirthday" layoutX="250.0" layoutY="297.0" prefHeight="25.0" prefWidth="197.0" />
+      <Button fx:id="executeFX" layoutX="301.0" layoutY="474.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="25.0" prefWidth="81.0" text="Ок">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="backFX" layoutX="392.0" layoutY="474.0" mnemonicParsing="false" onAction="#backButton" prefHeight="25.0" prefWidth="81.0" text="Отмена">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="imagePath" layoutX="31.0" layoutY="344.0" text="Путь к фотографии" />
+      <Button layoutX="210.0" layoutY="344.0" mnemonicParsing="false" onAction="#searchButton" prefHeight="25.0" prefWidth="81.0" text="Поиск" />
+   </children>
+</AnchorPane>
